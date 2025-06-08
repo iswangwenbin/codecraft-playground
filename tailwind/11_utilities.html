@@ -1,0 +1,29 @@
+<!-- 11_utilities.html -->
+<!-- 主题：实用工具类（container、aspect-ratio、line-clamp 等） -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS 实用工具类</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/line-clamp@latest/dist/line-clamp.min.js"></script>
+    <script>
+      tailwind.config = {
+        plugins: [tailwindcssLineClamp],
+      };
+    </script>
+  </head>
+  <body class="bg-gray-50 p-8">
+    <div class="container mx-auto bg-white p-4 rounded shadow mb-4">
+      <h2 class="text-lg font-bold mb-2">container 工具类</h2>
+      <p>自适应居中容器</p>
+    </div>
+    <div class="w-64 aspect-w-16 aspect-h-9 bg-blue-200 mb-4">16:9 宽高比</div>
+    <p class="line-clamp-2 w-64 bg-yellow-100 p-2 rounded">
+      这是一段很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长的文本，使用
+      line-clamp-2 工具类只显示两行。
+    </p>
+    <!-- container: 居中容器; aspect-w-16 aspect-h-9: 宽高比; line-clamp-2: 文本截断 -->
+  </body>
+</html>

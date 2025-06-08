@@ -1,0 +1,36 @@
+<!-- 07_pseudo_classes.html -->
+<!-- 主题：伪类与伪元素（first, last, odd, even, before, after 等） -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS 伪类与伪元素</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 p-8">
+    <ul class="divide-y divide-gray-300">
+      <li
+        class="first:font-bold last:text-red-500 odd:bg-gray-100 even:bg-gray-200 px-4 py-2"
+      >
+        第1项
+      </li>
+      <li
+        class="first:font-bold last:text-red-500 odd:bg-gray-100 even:bg-gray-200 px-4 py-2"
+      >
+        第2项
+      </li>
+      <li
+        class="first:font-bold last:text-red-500 odd:bg-gray-100 even:bg-gray-200 px-4 py-2"
+      >
+        第3项
+      </li>
+      <li
+        class="first:font-bold last:text-red-500 odd:bg-gray-100 even:bg-gray-200 px-4 py-2"
+      >
+        第4项
+      </li>
+    </ul>
+    <!-- first:、last:、odd:、even: 分别为首项、末项、奇数项、偶数项设置样式 -->
+  </body>
+</html>

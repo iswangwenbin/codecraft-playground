@@ -1,0 +1,30 @@
+<!-- 09_plugins.html -->
+<!-- 主题：插件与扩展 -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS 插件与扩展</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 示例：引入官方 aspect-ratio 插件 -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/aspect-ratio@latest/dist/aspect-ratio.min.js"></script>
+    <script>
+      tailwind.config = {
+        plugins: [tailwindcssAspectRatio],
+      };
+    </script>
+  </head>
+  <body class="bg-gray-50 p-8">
+    <div
+      class="w-64 aspect-w-16 aspect-h-9 bg-blue-300 rounded overflow-hidden"
+    >
+      <img
+        src="https://picsum.photos/800/450"
+        alt="示例"
+        class="object-cover w-full h-full"
+      />
+    </div>
+    <!-- aspect-w-16 aspect-h-9: 使用插件实现 16:9 宽高比 -->
+  </body>
+</html>

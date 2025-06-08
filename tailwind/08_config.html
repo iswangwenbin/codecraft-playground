@@ -1,0 +1,33 @@
+<!-- 08_config.html -->
+<!-- 主题：自定义主题与配置（tailwind.config.js） -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS 自定义主题与配置</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: "#ff5722",
+            },
+            spacing: {
+              72: "18rem",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-brand text-white p-8">
+    <div
+      class="w-72 h-16 bg-white text-brand flex items-center justify-center rounded shadow"
+    >
+      自定义 brand 颜色和 spacing
+    </div>
+    <!-- tailwind.config.js 可扩展主题色、间距等 -->
+  </body>
+</html>
